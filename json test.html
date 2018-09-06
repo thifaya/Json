@@ -23,13 +23,18 @@
         document.write("New Name: ",person.name);
             document.write("<br/ >");
             document.write("<br/>");
-        document.write(person.name+" has "+person.child.length+" Children namely");
+        document.write(person.name+" has "+person.child.length+" Their name and age are follow: ");
             document.write("<br/>");
+            
+            var y = 1;
             for(var x=0;x<person.child.length;x++){
-                document.write("Name: "+person.child[x].name);
+                
+                document.write(y + ". "+person.child[x].name+" is "+person.child[x].age+" years old");
+                y++;
                 document.write("<br/>");
+                
             }
-            document.write(person);
+            
         </script>
          
     </body>
