@@ -1,0 +1,36 @@
+<html>
+<head>
+<meta charset="utf-8">
+    <title>
+        Json test
+        
+    </title>
+    <h1>Hello JSON TEST</h1>
+</head>
+    <body>
+        
+        <script>
+        
+        var person = {
+            "name":"tony",
+            "age":34,
+            "employed":true,
+            "child":[{"name":"johnny","age":10},{"name":"misty","age":18},{"name":"jabu","age":5}]
+        }
+        document.write("Name: "+person.name);
+            document.write("<hr/ >");
+        person.name = "Boy Tony";
+        document.write("New Name: ",person.name);
+            document.write("<br/ >");
+            document.write("<br/>");
+        document.write(person.name+" has "+person.child.length+" Children namely");
+            document.write("<br/>");
+            for(var x=0;x<person.child.length;x++){
+                document.write("Name: "+person.child[x].name);
+                document.write("<br/>");
+            }
+            document.write(person);
+        </script>
+         
+    </body>
+</html>

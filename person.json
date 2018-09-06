@@ -1,0 +1,7 @@
+{
+    "name":"Johnosn",
+    "age":56,
+    "employed":false,
+    "home":"Canada"
+    "child":[{"name":"johnny","age":10},{"name":"misty","age":18},{"name":"jabu","age":5},{"name":"Peet",age:2}]
+}
