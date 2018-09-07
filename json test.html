@@ -13,35 +13,44 @@
         
 //            Edited by GIT hub======================================================================
             
-        var person = {
-            "name":" ",
-            "age":34,
-            "employed":true,
-            "child":[{"name":"johnny","age":10},{"name":"misty","age":18},{"name":"jabu","age":5}]
-        }
-        var person1 = {
-            "name":"niko",
-            "Surname":"Epps",
-            "age":22,
-            "Home":"Canada"
-        }
-        
-        person.name = "Tony"
-        document.write("Name: ",person.name);
-            document.write("<br/ >");
-            document.write("<br/>");
-        document.write("------------ "+person.name+" has "+person.child.length+" Their name and age are follow: -----------");
-            document.write("<br/>");
+//        var person = {
+//            "name":" ",
+//            "age":34,
+//            "employed":true,
+//            "child":[{"name":"johnny","age":10},{"name":"misty","age":18},{"name":"jabu","age":5}]
+//        }
+//        var person1 = {
+//            "name":"niko",
+//            "Surname":"Epps",
+//            "age":22,
+//            "Home":"Canada"
+//        }
+//        
+//        person.name = "Sam"
+//        document.write("Name: ",person.name);
+//            document.write("<br/ >");
+//            document.write("<br/>");
+//        document.write("------------ "+person.name+" has "+person.child.length+" Their name and age are follow: -----------");
+//            document.write("<br/>");
+//            
+//            var y = 1;
+//            for(var x=0;x<person.child.length;x++){
+//                
+//                document.write(y + ". "+person.child[x].name+" is "+person.child[x].age+" years old");
+//                y++;
+//                document.write("<br/>");
+//                
+//            }
+//  ===================================================================================================     
             
-            var y = 1;
-            for(var x=0;x<person.child.length;x++){
-                
-                document.write(y + ". "+person.child[x].name+" is "+person.child[x].age+" years old");
-                y++;
-                document.write("<br/>");
-                
+            var Req = XMLHttpRequest();
+            Req.open('GET','file:///C:/Users/TMollootimile/Documents/Json/person.json');
+            Req.onload = function(){
+                console.log(Req.responseText);
             }
-//  ===================================================================================================          
+            Req.send();
+            
+            document.write("HELLO WORLD");
         </script>
          
     </body>
